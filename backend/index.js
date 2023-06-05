@@ -8,8 +8,6 @@ const uri = process.env.DB_URI;
 
 const app = express();
 
-// const uri = "mongodb+srv://zikri:12345@mydb.ojqgwmm.mongodb.net/mydatabase?retryWrites=true&w=majority";
-
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log("Database connected");
